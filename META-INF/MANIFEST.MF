@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: TMS plugin
-Bundle-SymbolicName: org.idempiere.tms
-Bundle-Version: 8.2.0.qualifier
+Bundle-SymbolicName: org.idempiere.tms;singleton:=true
+Bundle-Version: 9.0.0.qualifier
 Bundle-ClassPath: .,
  lib/axis.jar,
  lib/directions-api-client.jar
@@ -16,10 +16,10 @@ Export-Package: org.eevolution.fms.process,
  org.idempiere.tms.model,
  org.idempiere.tms.process,
  org.idempiere.tms.util
-Require-Bundle: org.adempiere.base;bundle-version="7.1.0",
- org.adempiere.plugin.utils;bundle-version="7.1.0",
- org.adempiere.ui;bundle-version="7.1.0",
- org.adempiere.ui.zk;bundle-version="7.1.0",
+Require-Bundle: org.adempiere.base;bundle-version="8.2.0",
+ org.adempiere.plugin.utils;bundle-version="8.2.0",
+ org.adempiere.ui;bundle-version="8.2.0",
+ org.adempiere.ui.zk;bundle-version="8.2.0",
  org.apache.httpcomponents.httpclient,
  org.junit;bundle-version="4.12.0",
  org.idempiere.zk.extra;bundle-version="0.0.0",
@@ -29,8 +29,7 @@ Require-Bundle: org.adempiere.base;bundle-version="7.1.0",
  zul;bundle-version="8.6.0",
  com.sun.activation.jakarta.activation;bundle-version="1.2.1"
 Bundle-RequiredExecutionEnvironment: JavaSE-11
-Bundle-ActivationPolicy: lazy
-Automatic-Module-Name: org.idempiere.tms;singleton:=true
+Automatic-Module-Name: org.idempiere.tms
 Service-Component: OSGI-INF/TMSModelFactory.xml,OSGI-INF/TMSEventManager.xml,OSGI-INF/TMSCalloutFactory.xml,OSGI-INF/TMSProcessFactory.xml,OSGI-INF/TMSDocFactory.xml
 Import-Package: com.itextpdf.text.log;version="5.5.13",
  org.apache.commons.io;version="2.2.0",
@@ -45,3 +44,4 @@ Import-Package: com.itextpdf.text.log;version="5.5.13",
  org.zkforge.json.simple,
  org.zkforge.json.simple.parser
 Bundle-Vendor: EEvolution,PShepetko
+Bundle-ActivationPolicy: lazy

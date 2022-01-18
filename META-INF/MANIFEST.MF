@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: TMS plugin
-Bundle-SymbolicName: org.idempiere.tms
+Bundle-SymbolicName: org.idempiere.tms;singleton:=true
 Bundle-Version: 9.0.0.qualifier
 Bundle-ClassPath: .,
  lib/axis.jar,
